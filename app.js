@@ -25,7 +25,7 @@ global.io = io;
 app.locals.moment = moment;
 
 //DATABASE CONNECTION 
-mongoose.connect(process.env.MONOGO_CONNECTION_STRTING)
+mongoose.connect(process.env.MONGO_CONNECTION_STRING)
 .then(()=> console.log("Database connection successfull!"))
 .catch(err => console.log(err));
 
